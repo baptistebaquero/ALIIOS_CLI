@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Examples</category>
+  <index>0</index>
+  <title>ALIIOS_CLI</title>
+  <description><![CDATA[Apply a Gaussian blur to an image]]></description>
+  <version>0.1.0.</version>
+  <documentation-url>https://github.com/username/project</documentation-url>
+  <license/>
+  <contributor>Andras Lasso (PerkLab)</contributor>
+  <acknowledgements><![CDATA[This work is part of the National Alliance for Medical Image Computing (NAMIC), funded by the National Institutes of Health through the NIH Roadmap for Medical Research, Grant U54 EB005149.]]></acknowledgements>
+  <parameters>
+
+    <label>IO</label>
+    <description><![CDATA[Input/output parameters]]></description>
+    
+    <image>
+      <name>inputVolume</name>
+      <label>Input Volume</label>
+      <channel>input</channel>
+      <index>0</index>
+      <description><![CDATA[Input volume]]></description>
+    </image>
+
+    <string>
+      <name>data_L</name>
+      <label>data_L</label>
+      <index>1</index>
+      <description>Path of the lower data </description>
+    </string>
+  
+    <string>
+      <name>data_U</name>
+      <label>data_U</label>
+      <index>2</index>
+      <description>Path of the upper data </description>
+    </string>
+
+    <string>
+      <name>data_U</name>
+      <label>data_U</label>
+      <index>2</index>
+      <description>Path of the upper data </description>
+    </string>
+        
+    <string>
+      <name>model_L</name>
+      <label>model_L</label>
+      <index>3</index>
+      <description>Path of the Lower model </description>
+    </string>
+        
+    <string>
+      <name>model_U</name>
+      <label>model_U</label>
+      <index>4</index>
+      <description>Path of the upper model </description>
+    </string>
+
+    <string>
+      <name>view_type</name>
+      <label>view_type</label>
+      <index>5</index>
+      <description> Prepare the cameras for cervical or oclusal landmark prediction (ex: C or O) </description>
+    </string>
+    
+    <string>
+      <name>jaw</name>
+      <label>jaw</label>
+      <index>6</index>
+      <description>Prepare the cameras for upper or lower landmark prediction (ex: L U) </description>
+    </string>
+
+    <float>
+      <name>sphere_radius</name>
+      <label>sphere_radius</label>
+      <index>7</index>
+      <description>Radius of the sphere with all the cameras </description>
+    </float>
+    
+    <list>
+      <name>label_L</name>
+      <label>label_L</label>
+      <index>8</index>
+      <description> list of label for the lower jaw </description>
+    </list>
+
+    <list>
+      <name>label_U</name>
+      <label>label_U</label>
+      <index>9</index>
+      <description> list of label for the upper jaw </description>
+    </list>
+
+    <int>
+      <name>image_size</name>
+      <label>image_size</label>
+      <index>10</index>
+      <description> size of the 2D images </description>
+    </int>    
+    
+    <int>
+      <name>blur_radius</name>
+      <label>blur_radius</label>
+      <index>11</index>
+      <description> Blur parameter </description>
+    </int>    
+    
+    <int>
+      <name>faces_per_pixel</name>
+      <label>faces_per_pixel</label>
+      <index>12</index>
+      <description> number of faces per pixel </description>
+    </int>
+
+    <string>
+      <name>output_dir</name>
+      <label>output_dir</label>
+      <index>13</index>
+      <description> directory where saving the prediction </description>
+    </string>
+
+
+  </parameters>
+</executable>
